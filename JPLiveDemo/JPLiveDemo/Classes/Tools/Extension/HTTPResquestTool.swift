@@ -16,6 +16,7 @@ enum MethodType {
 
 class HTTPResquestTool {
     class func requestData(_ type: MethodType, URLString: String, parameters: [String: Any]? = nil, finishedCallBack: @escaping (_ result : Any) -> () ){
+        
         let method = type == .get ? HTTPMethod.get : HTTPMethod.post
         let parameterEncoding = URLEncoding.default
         request(URLString, method: method, parameters: parameters, encoding: parameterEncoding, headers: nil).responseJSON { (response) in

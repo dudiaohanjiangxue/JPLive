@@ -35,13 +35,15 @@
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="独钓寒江雪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdz-bf-7Hd">
                         <rect key="frame" x="0.0" y="111" width="72" height="17"/>
+                        <color key="backgroundColor" red="0.18878205128205128" green="0.18193850207670617" blue="0.17637920668237236" alpha="0.31142241379310343" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="0.22890869463907537" green="0.86187900641025639" blue="0.10344467646092509" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8wY-X9-7j5">
-                        <rect key="frame" x="119" y="111" width="77" height="17"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <rect key="frame" x="131" y="112" width="65" height="16"/>
+                        <color key="backgroundColor" red="0.18878205128205128" green="0.185361064595646" blue="0.18384378715457891" alpha="0.31142241379310343" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <state key="normal" title="1000在线" image="Image_online">
                             <color key="titleColor" red="0.98506500964434751" green="0.95387374247068935" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </state>

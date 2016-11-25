@@ -15,31 +15,41 @@
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1C-s3-bcB">
-                    <rect key="frame" x="265" y="0.0" width="45" height="50"/>
+                    <rect key="frame" x="265" y="10" width="45" height="40"/>
                     <state key="normal" title="更多 &gt;">
                         <color key="titleColor" red="0.2389408864" green="0.24230769229999999" blue="0.23281644670000001" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_header_phone" translatesAutoresizingMaskIntoConstraints="NO" id="zPP-BP-Pi2">
-                    <rect key="frame" x="10" y="16" width="18" height="18"/>
+                    <rect key="frame" x="10" y="21" width="18" height="18"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="18" id="gLa-g3-Dtw"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuQ-5q-COj">
-                    <rect key="frame" x="33" y="15" width="35" height="21"/>
+                    <rect key="frame" x="33" y="20" width="35" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HE1-84-fti">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
+                    <color key="backgroundColor" red="0.82598157051282051" green="0.82598157051282051" blue="0.82598157051282051" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="Ibi-sb-qnz"/>
+                    </constraints>
+                </view>
             </subviews>
             <constraints>
-                <constraint firstItem="zPP-BP-Pi2" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="9CF-1t-i6Z"/>
+                <constraint firstItem="HE1-84-fti" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="3Tq-sH-wWr"/>
+                <constraint firstItem="zPP-BP-Pi2" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" constant="5" id="9CF-1t-i6Z"/>
                 <constraint firstAttribute="bottom" secondItem="u1C-s3-bcB" secondAttribute="bottom" id="D2w-1S-gLh"/>
-                <constraint firstItem="u1C-s3-bcB" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Gbq-d5-3m3"/>
+                <constraint firstItem="HE1-84-fti" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="HxD-NG-3hG"/>
                 <constraint firstItem="wuQ-5q-COj" firstAttribute="leading" secondItem="zPP-BP-Pi2" secondAttribute="trailing" constant="5" id="K2R-mi-LOU"/>
                 <constraint firstAttribute="trailing" secondItem="u1C-s3-bcB" secondAttribute="trailing" constant="10" id="Y7Z-iD-ODb"/>
                 <constraint firstItem="wuQ-5q-COj" firstAttribute="centerY" secondItem="zPP-BP-Pi2" secondAttribute="centerY" id="gVa-Tf-dug"/>
+                <constraint firstAttribute="trailing" secondItem="HE1-84-fti" secondAttribute="trailing" id="mNq-6s-jdq"/>
+                <constraint firstItem="u1C-s3-bcB" firstAttribute="top" secondItem="HE1-84-fti" secondAttribute="bottom" id="rFa-kt-fq2"/>
                 <constraint firstItem="zPP-BP-Pi2" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="yF1-Lt-ZlX"/>
             </constraints>
             <connections>

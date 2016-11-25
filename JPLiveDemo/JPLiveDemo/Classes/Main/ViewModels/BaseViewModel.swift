@@ -9,7 +9,7 @@
 import UIKit
 //MARK: - 属性
 class BaseViewModel {
-    lazy var anchorGroups: [AnchorGroupModel] = [AnchorGroupModel]()
+    lazy var anchorGroups: [AnchorGroupModel] = [AnchorGroupModel]() //所有的组的模型
 }
 
 //MARK: - 网络请求

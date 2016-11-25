@@ -11,13 +11,13 @@ import UIKit
 private let kItemMargin: CGFloat = 10
 private let kHeaderViewH: CGFloat = 50
 
-private let kNormalCellID = "kNormalCellID"
+ let kNormalCellID = "kNormalCellID"
 private let kHeaderViewID = "kHeaderViewID"
-private let kPrettyCellID = "kPrettyCellID"
+ let kPrettyCellID = "kPrettyCellID"
 
 let kNormalItemW = (kScreenW - 3 * kItemMargin) / 2
-let kNormalItemH = kScreenW * 3 / 4
-let kPrettyItemH = kScreenW * 4 / 3
+let kNormalItemH = kNormalItemW * 3 / 4
+let kPrettyItemH = kNormalItemW * 4 / 3
 
 class BaseAnchorViewController: BaseViewController {
     //MARK: - 属性
@@ -66,7 +66,7 @@ extension BaseAnchorViewController {
 //MARK: - 请求数据
 extension BaseAnchorViewController {
 
-    fileprivate func loadData() {
+    func loadData() {
     
     
     

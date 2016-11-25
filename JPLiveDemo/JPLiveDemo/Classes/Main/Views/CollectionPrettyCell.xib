@@ -39,9 +39,10 @@
                         <color key="textColor" red="0.6148838141025641" green="0.38818449504140734" blue="0.22721506393403987" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMZ-m3-YMe">
-                        <rect key="frame" x="89" y="5" width="95" height="16"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WG8-L6-VQN">
+                        <rect key="frame" x="106" y="5" width="78" height="16"/>
+                        <color key="backgroundColor" red="0.18878205128205128" green="0.18878205128205128" blue="0.18878205128205128" alpha="0.31142241379310343" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <state key="normal" title="10000人在线" image="Image_online"/>
                     </button>
                 </subviews>
@@ -51,19 +52,19 @@
                 <constraint firstItem="Aad-Oa-ppN" firstAttribute="top" secondItem="rKg-qS-j1s" secondAttribute="bottom" constant="5" id="97O-JM-ud7"/>
                 <constraint firstItem="rKg-qS-j1s" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="LQ0-hV-Gbr"/>
                 <constraint firstAttribute="trailing" secondItem="rKg-qS-j1s" secondAttribute="trailing" id="Omz-XF-gbi"/>
-                <constraint firstAttribute="trailing" secondItem="cMZ-m3-YMe" secondAttribute="trailing" constant="5" id="PgB-hh-uRC"/>
                 <constraint firstAttribute="bottom" secondItem="3Q7-B1-c3c" secondAttribute="bottom" constant="10" id="UQx-Zy-bf7"/>
+                <constraint firstItem="WG8-L6-VQN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="XFG-rC-Itd"/>
                 <constraint firstItem="3Q7-B1-c3c" firstAttribute="top" secondItem="Aad-Oa-ppN" secondAttribute="bottom" constant="3" id="e1Z-TI-8kz"/>
+                <constraint firstAttribute="trailing" secondItem="WG8-L6-VQN" secondAttribute="trailing" constant="5" id="eBm-v8-sKz"/>
                 <constraint firstItem="3Q7-B1-c3c" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="ptf-XP-ssX"/>
                 <constraint firstItem="Aad-Oa-ppN" firstAttribute="leading" secondItem="3Q7-B1-c3c" secondAttribute="leading" id="rrX-Qp-TVx"/>
-                <constraint firstItem="cMZ-m3-YMe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="uIa-9G-QcZ"/>
             </constraints>
             <size key="customSize" width="189" height="206"/>
             <connections>
                 <outlet property="cityBtn" destination="3Q7-B1-c3c" id="8je-cy-dPk"/>
                 <outlet property="iconImageView" destination="rKg-qS-j1s" id="qvI-WZ-5Ys"/>
                 <outlet property="nikeNameLabel" destination="Aad-Oa-ppN" id="ZhT-K5-PbY"/>
-                <outlet property="onLineBtn" destination="cMZ-m3-YMe" id="Nk0-xf-xih"/>
+                <outlet property="onLineBtn" destination="WG8-L6-VQN" id="D50-e9-HRC"/>
             </connections>
             <point key="canvasLocation" x="103.5" y="132"/>
         </collectionViewCell>
