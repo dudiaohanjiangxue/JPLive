@@ -67,8 +67,7 @@ extension BaseAnchorViewController {
 extension BaseAnchorViewController {
 
     func loadData() {
-    
-    
+    print("父   加载数据")
     
     }
 

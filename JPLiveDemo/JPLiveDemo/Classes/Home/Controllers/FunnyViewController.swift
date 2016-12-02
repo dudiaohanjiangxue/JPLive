@@ -7,29 +7,38 @@
 //
 
 import UIKit
+private let kTopMargin : CGFloat = 8
+class FunnyViewController: BaseAnchorViewController {
 
-class FunnyViewController: BaseViewController {
-
+     //MARK: - 属性
+    fileprivate lazy var funnyVM: FunncyViewModel = FunncyViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.red
-        // Do any additional setup after loading the view.
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
+}
+
+//MARK: - UI
+extension FunnyViewController {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func setupUI() {
+        super.setupUI()
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.headerReferenceSize = CGSize.zero
+        collectionView.contentInset = UIEdgeInsets(top: kTopMargin, left: 0, bottom: 0, right: 0)
     }
-    */
+}
+
+extension FunnyViewController {
+    override func loadData() {
+        baseVM = funnyVM
+        funnyVM.loadFunncyData {
+            self.collectionView.reloadData()
+            self.loadDataFinished()
+        }
+    }
 
 }
